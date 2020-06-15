@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_itemHotel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="18dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_imageHotel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imv_imageHotel"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="110dp"
+                        android:layout_centerInParent="true"
+                        android:layout_height="110dp"
+                        android:src="@drawable/bg_splashscreen" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/ll_contentTitle"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_toEndOf="@+id/rl_imageHotel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_nameHotel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+
+                            android:maxLength="12"
+                            android:textColor="#07c"
+                            android:textSize="24dp" />
+
+
+                        <LinearLayout
+                            android:layout_marginTop="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="@dimen/_14sdp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_location_on_black_24dp"
+                                android:layout_height="@dimen/_14sdp"/>
+                            <TextView
+                                android:id="@+id/tv_descriptionHotel"
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Hihihi"
+
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_14sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textColor="#F06A90B5"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_below="@+id/ll_contentTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginRight="@dimen/_20sdp"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_toStartOf="@+id/ll_priceHotel"
+                                    android:layout_height="wrap_content">
+                                    <Button
+                                        android:id="@+id/btn_openLinkBooking"
+                                        android:layout_width="wrap_content"
+                                        android:text="Booking"
+                                        android:layout_height="@dimen/_30sdp"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:id="@+id/ll_priceHotel"
+                                    android:gravity="center"
+                                    android:layout_centerInParent="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_gravity="center"
+
+                                        android:layout_width="wrap_content"
+                                        android:textSize="@dimen/_18sdp"
+                                        android:textColor="#000"
+                                        android:fontFamily="@font/roboto_regular"
+                                        android:layout_height="wrap_content"
+                                        android:text="$" />
+                                    <TextView
+                                        android:id="@+id/tv_priceHotel"
+                                        android:layout_marginLeft="@dimen/_2sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_width="wrap_content"
+                                        android:textSize="@dimen/_18sdp"
+                                        android:textColor="#000"
+                                        android:textStyle="bold"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:layout_height="wrap_content"
+                                        android:text="15" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
